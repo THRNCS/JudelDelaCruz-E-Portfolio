@@ -1010,22 +1010,34 @@
       }
 
       .cert-filter {
+        display: inline-flex;
         min-height: 38px;
+        align-items: center;
+        justify-content: center;
         padding: 0 16px;
         border: 1px solid var(--line);
         border-radius: 999px;
-        background: transparent;
+        background: rgba(10, 14, 22, 0.8);
         color: var(--muted);
         cursor: pointer;
         font: 600 12px var(--sans);
-        transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+        opacity: 1;
+        visibility: visible;
+        transition: background 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
       }
 
       .cert-filter:hover,
       .cert-filter[aria-pressed="true"] {
-        border-color: var(--green);
-        background: var(--green);
-        color: #100d1c;
+        border-color: rgba(196, 181, 253, 0.7);
+        background: linear-gradient(180deg, rgba(139, 92, 246, 0.96), rgba(109, 75, 209, 0.96));
+        color: #ffffff;
+        box-shadow: 0 0 0 1px rgba(196, 181, 253, 0.24), 0 8px 18px rgba(127, 92, 232, 0.26);
+        transform: translateY(-1px);
+      }
+
+      .cert-filter:focus-visible {
+        outline: 2px solid #cbbcff;
+        outline-offset: 3px;
       }
 
       .cert-card[hidden] {

@@ -12,9 +12,12 @@
           });
 
           certificates.forEach((certificate) => {
-            certificate.hidden =
-              selectedCategory !== "all" &&
-              certificate.dataset.category !== selectedCategory;
+            const matches =
+              selectedCategory === "all" ||
+              certificate.dataset.category === selectedCategory;
+
+            certificate.hidden = !matches;
+            certificate.style.display = matches ? "block" : "none";
           });
         });
       });
