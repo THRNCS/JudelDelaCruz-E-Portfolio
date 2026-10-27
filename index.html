@@ -27,8 +27,6 @@
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
           <a href="#certificates">Certificates</a>
           <a class="nav-resume" href="#resume">Resume</a>
           <a class="nav-cta" href="#contact">Contact</a>
@@ -69,80 +67,170 @@
         </div>
       </section>
 
-      <section class="section shell" id="about">
-        <div class="section-heading">
-          <p class="section-kicker">01 / About me</p>
-          <h2>A little about me, and <em>what I’m working toward.</em></h2>
-        </div>
-        <div class="about-grid">
-          <div>
-            <p>
-              I’m Judel P. Dela Cruz, an Information Technology student at
-              Northeastern College. I’m interested in computer maintenance,
-              user experience, and how technology can make everyday tasks
-              simpler.
-            </p>
-            <p>
-              I’m building my skills through my studies and hands-on learning.
-              I value clear communication, thoughtful design, and taking a
-              practical, user-focused approach to solving technical problems.
-            </p>
-          </div>
-          <div class="stat-row" aria-label="Portfolio highlights">
-            <div class="stat"><strong>IT</strong><span>Area of study</span></div>
-            <div class="stat"><strong>03</strong><span>Highlighted skill areas</span></div>
-            <div class="stat"><strong>02</strong><span>Schools attended</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section education" id="education">
-        <div class="shell">
-          <div class="section-heading">
-            <p class="section-kicker">02 / Education</p>
-            <h2>The foundations behind <em>my next steps.</em></h2>
-          </div>
-          <div class="education-list">
-            <article class="education-item">
-              <span class="education-year">2024 — Present</span>
-              <div>
-                <h3>Information Technology</h3>
-                <p>Northeastern College · Santiago City, Isabela</p>
-              </div>
-              <span class="education-type">College</span>
-            </article>
-            <article class="education-item">
-              <span class="education-year">2021 — 2023</span>
-              <div>
-                <h3>Information and Communications Technology (ICT)</h3>
-                <p>Santiago City National High School · Santiago City, Isabela</p>
-              </div>
-              <span class="education-type">Senior high</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section shell" id="skills">
-        <div class="section-heading">
-          <p class="section-kicker">03 / Skills</p>
-          <h2>Things I know, and <em>things I’m growing.</em></h2>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <span class="skill-number">01</span>
-            <h3>Technical skills</h3>
-            <p>Computer maintenance, troubleshooting, and basic hardware and software support.</p>
+      <section class="section shell about-page" id="about">
+        <div class="about-layout">
+          <article class="about-card about-card--skills">
+            <div class="about-card-header">
+              <span class="about-index">01</span>
+              <h3>Skills</h3>
+              <span class="about-symbol about-symbol--skills" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M8 34h8V14H8zm12 0h8V8h-8zm12 0h8V20h-8z" />
+                </svg>
+              </span>
+            </div>
+            <ul class="about-list">
+              <li>
+                <span>01 / Programming</span>
+                <div class="skill-tags">
+                  <span>C++</span><span>C#</span><span>JavaScript</span><span>PHP</span>
+                </div>
+              </li>
+              <li>
+                <span>02 / Web development</span>
+                <div class="skill-tags">
+                  <span>HTML</span><span>CSS</span>
+                </div>
+              </li>
+              <li>
+                <span>03 / Database</span>
+                <div class="skill-tags">
+                  <span>MySQL</span>
+                </div>
+              </li>
+            </ul>
           </article>
-          <article class="skill-card">
-            <span class="skill-number">02</span>
-            <h3>Creative skills</h3>
-            <p>User experience (UX) and interface design focused on clear, intuitive digital experiences.</p>
+
+          <article class="about-card about-card--interests">
+            <div class="about-card-header">
+              <span class="about-index">02</span>
+              <h3>Other Interest</h3>
+              <span class="about-symbol about-symbol--interests" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="m24 5 5.2 13.8L43 24l-13.8 5.2L24 43l-5.2-13.8L5 24l13.8-5.2L24 5Z" />
+                </svg>
+              </span>
+            </div>
+            <div class="interest-grid">
+              <div class="interest-item">
+                <span class="interest-number">01</span>
+                <svg class="interest-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                  <path d="M8 15h8l3-4h10l3 4h8v23H8z" />
+                  <circle cx="24" cy="26" r="8" />
+                  <circle class="icon-accent" cx="37" cy="20" r="1.5" />
+                </svg>
+                <strong>Photography</strong>
+              </div>
+              <div class="interest-item">
+                <span class="interest-number">02</span>
+                <svg class="interest-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                  <rect x="6" y="13" width="25" height="22" rx="3" />
+                  <path d="m31 20 11-6v20l-11-6z" />
+                  <circle class="icon-accent" cx="18.5" cy="24" r="5.5" />
+                </svg>
+                <strong>Videography</strong>
+              </div>
+              <div class="interest-item">
+                <span class="interest-number">03</span>
+                <svg class="interest-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                  <path d="M7 14h7v20H7zm27 0h7v20h-7zM14 24h6m8 0h6M20 17l8 14m0-14-8 14" />
+                  <path class="icon-accent" d="M18 20h12M18 28h12" />
+                </svg>
+                <strong>Video Editing</strong>
+              </div>
+            </div>
+            <div class="interest-video-carousel" aria-label="Videography and video editing samples">
+              <div class="interest-video-controls">
+                <span>VIDEO SAMPLES <span class="video-count">01 / 02</span></span>
+                <div>
+                  <button class="video-arrow" type="button" data-direction="-1" aria-label="Scroll to previous video sample">
+                    <span aria-hidden="true">←</span>
+                  </button>
+                  <button class="video-arrow" type="button" data-direction="1" aria-label="Scroll to next video sample">
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+              <div class="interest-video-track" tabindex="0" aria-label="Video samples, use left and right arrow buttons to browse">
+                <figure class="interest-video">
+                  <figcaption>
+                    <span>SAMPLE 01</span>
+                    <strong>Videography &amp; Video Editing</strong>
+                  </figcaption>
+                  <video controls preload="metadata" playsinline aria-label="Videography and video editing sample one">
+                    <source src="assets/videos/video-sample.mp4" type="video/mp4">
+                    Your browser does not support embedded video.
+                  </video>
+                </figure>
+                <figure class="interest-video">
+                  <figcaption>
+                    <span>SAMPLE 02</span>
+                    <strong>Videography &amp; Video Editing</strong>
+                  </figcaption>
+                  <video controls preload="metadata" playsinline aria-label="Videography and video editing sample two">
+                    <source src="assets/videos/video-sample-2.mp4" type="video/mp4">
+                    Your browser does not support embedded video.
+                  </video>
+                </figure>
+              </div>
+            </div>
           </article>
-          <article class="skill-card">
-            <span class="skill-number">03</span>
-            <h3>People skills</h3>
-            <p>Technical communication and stakeholder management to keep people aligned and informed.</p>
+
+          <article class="about-card about-card--education">
+            <div class="about-card-header">
+              <span class="about-index">03</span>
+              <h3>Education</h3>
+              <span class="about-symbol about-symbol--education" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M8 12h32v7H8zm0 17h32v7H8zM15 19v10m18-10v10" />
+                </svg>
+              </span>
+            </div>
+            <div class="about-education-grid">
+              <div class="education-block">
+                <span class="education-date">2024 — PRESENT</span>
+                <div>
+                  <h4>Bachelor of Science in Information Technology</h4>
+                  <p>Northeastern College</p>
+                </div>
+              </div>
+              <div class="education-block">
+                <span class="education-date">GRADUATED 2024</span>
+                <div>
+                  <h4>Information and Communication Technology</h4>
+                  <p>Santiago City National High School</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-card about-card--experience">
+            <div class="about-card-header">
+              <span class="about-index">04</span>
+              <h3>Experience</h3>
+              <span class="about-symbol about-symbol--experience" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M9 9h12v12H9zm18 18h12v12H27zM25 11l12 12M11 37l12-12" />
+                </svg>
+              </span>
+            </div>
+            <div class="experience-block">
+              <div class="experience-overview">
+                <h4>Work Immersion</h4>
+                <p>Mastertech Computer &amp; Electronics</p>
+                <span>FEBRUARY — MARCH 2024</span>
+              </div>
+              <div class="experience-duties">
+                <div class="experience-duty">
+                  <span>01</span>
+                  <p>Fixed and maintained computer hardware and software.</p>
+                </div>
+                <div class="experience-duty">
+                  <span>02</span>
+                  <p>Assisted in the setup and configuration of network infrastructure.</p>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -150,7 +238,7 @@
       <section class="section education" id="certificates">
         <div class="shell">
           <div class="section-heading">
-            <p class="section-kicker">04 / Certificates</p>
+            <p class="section-kicker">Certificates</p>
             <h2>Learning that happens <em>beyond the classroom.</em></h2>
           </div>
           <div class="cert-filters" role="group" aria-label="Filter certificates by category">
@@ -373,7 +461,7 @@
         <div class="shell">
           <div class="resume-heading">
             <div class="section-heading">
-              <p class="section-kicker">05 / Resume</p>
+              <p class="section-kicker">Resume</p>
               <h2>My experience and skills, <em>all in one place.</em></h2>
             </div>
             <a class="button" href="assets/resume/Judel-P-Dela-Cruz-Resume.pdf" download="Judel-P-Dela-Cruz-Resume.pdf">Download resume ↓</a>
@@ -394,7 +482,7 @@
       <section class="contact" id="contact">
         <div class="shell contact-layout">
           <div class="contact-copy">
-            <p class="section-kicker">06 / Contact</p>
+            <p class="section-kicker">Contact</p>
             <h2>Have an opportunity or idea? Let’s talk.</h2>
             <p>
               I’m always glad to connect, hear about interesting work, and meet
